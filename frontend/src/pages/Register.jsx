@@ -37,6 +37,7 @@ export default function Register() {
               <input
                 className="input"
                 required
+                autoComplete="name"
                 value={form.full_name}
                 onChange={(e) => setForm({ ...form, full_name: e.target.value })}
                 placeholder="Subham Maharana"
@@ -48,6 +49,7 @@ export default function Register() {
                 className="input"
                 type="email"
                 required
+                autoComplete="email"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 placeholder="you@example.com"
@@ -60,6 +62,7 @@ export default function Register() {
                 type="password"
                 required
                 minLength={6}
+                autoComplete="new-password"
                 value={form.password}
                 onChange={(e) => setForm({ ...form, password: e.target.value })}
                 placeholder="Min 6 characters"
